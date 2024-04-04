@@ -33,7 +33,7 @@ You can find a simple example going through the solution manually here:
 
 You can assume the following:
 - Every ship can be placed into anchorage. No ship in the input list will be larger than the anchorage.
-- Pptimal solution is welcome, but not necessary. Most of the time a "good enough" solution is going to solve the case.
+- Optimal solution is welcome, but not necessary. Most of the time a "good enough" solution is going to solve the case.
 - Ships can be rotated before placement.
 - All of the ships enter and leave the anchorage at the same time, so there is no need to worry about solving any pathing-related issues.
 
