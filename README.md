@@ -1,4 +1,8 @@
-# Electronic Shipping Agent
+# Task
+
+Create an API with working endpoints to solve a functional problem. The specifications will be stated below.
+
+# Backstory: Electronic Shipping Agent
 
 We have recently opened a robotics laboratory inside our organisation and we have already gotten a lead with a potential customer in the shipping business.
 The customer is a co-owner of a local port and anchorage and they need help automating their ship docking solution. For the longest time they have employed
@@ -28,20 +32,20 @@ You can find a simple example going through the solution manually here:
 [EXAMPLE.md](/EXAMPLE.md).
 
 You can assume the following:
-- every ship can be placed into anchorage. No ship in the input list will be larger than the anchorage;
-- optimal solution is welcome, but not necessary. Most of the time a "good enough" solution is going to solve the case;
-- ships can be rotated before placement;
-- all of the ships enter and leave the anchorage at the same time, so there is no need to worry about solving any pathing-related issues.
+- Every ship can be placed into anchorage. No ship in the input list will be larger than the anchorage.
+- Pptimal solution is welcome, but not necessary. Most of the time a "good enough" solution is going to solve the case.
+- Ships can be rotated before placement.
+- All of the ships enter and leave the anchorage at the same time, so there is no need to worry about solving any pathing-related issues.
 
 We have asked our market researcher to supply us with sufficient test data for you to validate your solution. Test cases are served via a web API which you can access on this URI: https://esa.instech.no
 
 The API is live and public and will emit a random test case upon request. You can use your favourite tool like `curl` or `Postman` to inspect the schema of the test data.
 
 ## Bonus points
-- integration testing of the API;
-- API endpoint doc comments or a swagger endpoint with example usages;
-- logging in the core application part detailing the process of optimization;
-- proper development history in git with meaningful commit messages and/or branching;
+- Integration testing of the API.
+- API endpoint doc comments or a swagger endpoint with example usages.
+- Logging in the core application part detailing the process of optimisation.
+- Proper development history in git with meaningful commit messages and/or branching.
 - CI/CD pipeline into the cloud provider of your choice.
 
 ## Remarks about presenting and implementing the solution
