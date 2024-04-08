@@ -1,9 +1,11 @@
-﻿namespace electronic_shipping_agent_task;
+﻿namespace electronic_shipping_agent;
 
-class Program
+class ElectronicShippingAgent_API
 {
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
     }
+
+    
 }
