@@ -18,6 +18,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// Add controllers to application 
+app.MapControllers();
+
 app.UseAuthorization();
 
 app.MapRazorPages();
