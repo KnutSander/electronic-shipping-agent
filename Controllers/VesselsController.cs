@@ -2,41 +2,40 @@ using electronic_shipping_agent.Models;
 using electronic_shipping_agent.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace electronic_shipping_agent.Controllers
+namespace electronic_shipping_agent.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class VesselsController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class VesselsController : ControllerBase
+    private readonly HttpClient _httpClient;
+    private readonly VesselsInformationService _vesselsInformationService;
+
+    public VesselsInformation _vesselsInformation;
+
+    public VesselsController()
     {
-        private readonly HttpClient _httpClient;
-        private readonly VesselsInformationService _vesselsInformationService;
+        _httpClient = new HttpClient();
+        _vesselsInformationService = new VesselsInformationService();
+        _vesselsInformation = new VesselsInformation();
+    }
 
-        public VesselsInformation _vesselsInformation;
-
-        public VesselsController()
+    [HttpGet("recieve")]
+    public async Task<IActionResult> RecieveVesselInformation()
+    {
+        try
         {
-            _httpClient = new HttpClient();
-            _vesselsInformationService = new VesselsInformationService();
-            _vesselsInformation = new VesselsInformation();
+            HttpResponseMessage response = await _httpClient.GetAsync("https://esa.instech.no/api/fleets/random");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            //Decoode JSON into object
+            _vesselsInformation = _vesselsInformationService.DecodeVesselsInformation(responseBody);
+            return Ok(_vesselsInformation);
         }
-
-        [HttpGet("recieve")]
-        public async Task<IActionResult> RecieveVesselInformation()
+        catch (Exception ex)
         {
-            try
-            {
-                HttpResponseMessage response = await _httpClient.GetAsync("https://esa.instech.no/api/fleets/random");
-                response.EnsureSuccessStatusCode();
-                string responseBody = await response.Content.ReadAsStringAsync();
-                
-                //Decoode JSON into object
-                _vesselsInformation = _vesselsInformationService.DecodeVesselsInformation(responseBody);
-                return Ok(_vesselsInformation);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            return StatusCode(500, ex.Message);
         }
     }
 }
