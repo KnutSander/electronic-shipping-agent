@@ -1,7 +1,6 @@
 
 using System.Text.Json;
 using electronic_shipping_agent.Models;
-using Microsoft.VisualBasic;
 
 namespace electronic_shipping_agent.Services;
 
@@ -18,6 +17,7 @@ public class VesselsInformationService
         }
         catch (Exception ex)
         {
+            // TODO: Missing proper error handling
             Console.WriteLine(ex.Message);
             throw;
         }
