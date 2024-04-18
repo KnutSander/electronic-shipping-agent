@@ -10,13 +10,16 @@ public class VesselsController : ControllerBase
 {
     private readonly HttpClient _httpClient;
     private readonly VesselsInformationService _vesselsInformationService;
+    private readonly VesselsLayoutService _vesselsLayoutService;
 
-    public VesselsInformation _vesselsInformation;
+    private VesselsInformation _vesselsInformation;
+    
 
     public VesselsController()
     {
         _httpClient = new HttpClient();
         _vesselsInformationService = new VesselsInformationService();
+        _vesselsLayoutService = new VesselsLayoutService();
         _vesselsInformation = new VesselsInformation();
     }
 
@@ -31,6 +34,10 @@ public class VesselsController : ControllerBase
 
             //Decoode JSON into object
             _vesselsInformation = _vesselsInformationService.DecodeVesselsInformation(responseBody);
+
+            // Calculate optimal layout
+            _vesselsLayoutService.FirstFit(_vesselsInformation);
+
             return Ok(_vesselsInformation);
         }
         catch (Exception ex)
