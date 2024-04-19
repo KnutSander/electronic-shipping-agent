@@ -37,7 +37,7 @@ public class VesselsController : ControllerBase
 
             // Calculate optimal layout
             _vesselsLayoutService.FirstFit(_vesselsInformation);
-
+            
             return Ok(_vesselsInformation);
         }
         catch (Exception ex)
