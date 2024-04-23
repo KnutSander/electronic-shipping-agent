@@ -10,7 +10,6 @@ public class VesselsController : ControllerBase
 {
     private readonly HttpClient _httpClient;
     private readonly VesselsInformationService _vesselsInformationService;
-    private readonly VesselsLayoutService _vesselsLayoutService;
 
     private VesselsInformation _vesselsInformation;
     
@@ -19,7 +18,6 @@ public class VesselsController : ControllerBase
     {
         _httpClient = new HttpClient();
         _vesselsInformationService = new VesselsInformationService();
-        _vesselsLayoutService = new VesselsLayoutService();
         _vesselsInformation = new VesselsInformation();
     }
 
@@ -38,9 +36,6 @@ public class VesselsController : ControllerBase
 
             // Decoode JSON string into VesselsInformation object
             _vesselsInformation = _vesselsInformationService.DecodeVesselsInformation(responseBody);
-
-            // TODO: Calculate optimal layout in seperate method
-            //_vesselsLayoutService.FirstFit(_vesselsInformation);
             
             return Ok(_vesselsInformation);
         }
