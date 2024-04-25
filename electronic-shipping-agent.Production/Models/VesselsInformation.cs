@@ -11,14 +11,14 @@ public class Dimensions
 // Fleet class for all fleets in the input data
 public class Fleet
 {
-public Dimensions SingleShipDimensions { get; set; }
-public string ShipDesignation { get; set; }
+public required Dimensions SingleShipDimensions { get; set; }
+public required string ShipDesignation { get; set; }
 public int ShipCount { get; set; }
 }
 
 // VesselsInformatiuon class to store the entire input dataset
 public class VesselsInformation
 {
-    public Dimensions AnchorageSize { get; set; }
-    public Fleet[] Fleets { get; set; }
+    public required Dimensions AnchorageSize { get; set; }
+    public required Fleet[] Fleets { get; set; }
 }
