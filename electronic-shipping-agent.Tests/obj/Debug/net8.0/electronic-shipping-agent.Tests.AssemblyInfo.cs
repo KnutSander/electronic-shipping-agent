@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("electronic-shipping-agent.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a470e3b949518ef2a7f384634710bc12285feafb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41545ea9735ec14c0b0010f66354ad83af03437c")]
 [assembly: System.Reflection.AssemblyProductAttribute("electronic-shipping-agent.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("electronic-shipping-agent.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
