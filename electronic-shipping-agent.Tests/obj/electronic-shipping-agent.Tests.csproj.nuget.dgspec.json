@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj": {}
+    "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj": {
+    "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj",
+        "projectUniqueName": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj",
         "projectName": "electronic-shipping-agent.Production",
-        "projectPath": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj",
-        "packagesPath": "C:\\Users\\knut.blakkestad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\obj\\",
+        "projectPath": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj",
+        "packagesPath": "C:\\Users\\knuts\\.nuget\\packages\\",
+        "outputPath": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\knut.blakkestad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\knuts\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,21 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj": {
+    "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj",
+        "projectUniqueName": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj",
         "projectName": "electronic-shipping-agent.Tests",
-        "projectPath": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj",
-        "packagesPath": "C:\\Users\\knut.blakkestad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\obj\\",
+        "projectPath": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\electronic-shipping-agent.Tests.csproj",
+        "packagesPath": "C:\\Users\\knuts\\.nuget\\packages\\",
+        "outputPath": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\knut.blakkestad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\knuts\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -87,8 +87,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj": {
-                "projectPath": "C:\\Users\\knut.blakkestad\\source\\repos\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj"
+              "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj": {
+                "projectPath": "O:\\Programming\\GitHub\\electronic-shipping-agent\\electronic-shipping-agent.Production\\electronic-shipping-agent.Production.csproj"
               }
             }
           }
@@ -118,7 +118,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.7.1, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
@@ -141,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
